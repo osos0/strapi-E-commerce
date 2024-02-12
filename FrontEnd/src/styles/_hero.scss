@@ -1,0 +1,26 @@
+@use "./var" as *;
+
+.fatherHero {
+  background-color: $softGray;
+  margin: 15px 0;
+  padding: 15px 0;
+
+  .heroChildOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroChildTwo {
+    .heroChildTwoCon {
+      position: relative;
+
+      //   .heroChildTwoConImg {
+      //   }
+      .TextFlow {
+        position: absolute;
+        top: 25px;
+        left: 15px;
+      }
+    }
+  }
+}

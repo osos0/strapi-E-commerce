@@ -1,0 +1,15 @@
+@use "./var" as *;
+
+.valueNumber {
+  .valueNumberChild {
+    background-color: $softGray;
+    border: 2px solid $white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      padding: 15px;
+    }
+  }
+}

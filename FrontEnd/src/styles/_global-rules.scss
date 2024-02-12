@@ -1,0 +1,49 @@
+@use "./var" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  font-size: 25px;
+}
+
+select {
+  color: $gray !important;
+  outline: none;
+  border: 1px $softGray solid;
+  border-radius: 5px;
+}
+
+.imgCon {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 200px;
+  img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+// Mobile Screens
+@media (max-width: 767px) {
+  .heroChildTwo {
+    display: none;
+  }
+  .header2ChildOne {
+    border: 1px solid red;
+    display: none !important;
+  }
+}
+// Small Screens
+@media (min-width: 768px) {
+}
+// Medium Screens
+@media (min-width: 992px) {
+}
+// large Screens
+@media (min-width: 1200px) {
+}

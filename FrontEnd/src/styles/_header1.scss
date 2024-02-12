@@ -1,0 +1,116 @@
+@use "./var" as *;
+
+// ----------- Header One -----------
+.navbar1 {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 5px 10px;
+
+  .conOfChild {
+    // min-height: 40px;
+    padding: 2px;
+
+    .navbar1childOne {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      margin: auto;
+      .hot {
+        background-color: $Pink;
+        padding: 2px 25px;
+        border-radius: 10px;
+        margin-right: 5px;
+      }
+    }
+    .navbar1childThree {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      .dropdown-toggle {
+        background-color: transparent;
+        .dropdown-menu-end {
+          // background-color: red;
+        }
+      }
+    }
+  }
+}
+
+// ----------- Header Two -----------
+
+.header2 {
+  height: 90px;
+  .setflex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header2ChildOne {
+    color: $darkBlue;
+  }
+  .header2ChildTwo {
+    color: $gray !important;
+    form {
+      width: 90%;
+    }
+  }
+  .header2ChildTree {
+    flex-direction: row;
+    justify-content: space-around;
+    svg {
+      color: $gray;
+      background-color: $softGray;
+
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+
+// ----------- Header Three -----------
+
+.header3 {
+  height: 60px;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .header3ChildOne {
+    max-height: 50px;
+    padding: 10px;
+    background-color: $softGray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // margin: auto;
+    select {
+      height: 90%;
+      border: 1px solid transparent;
+      background-color: $softGray;
+    }
+    svg {
+      font-size: 30px;
+      color: $darkBlue;
+    }
+  }
+  .header3ChildTwo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    .allNav {
+      width: 100%;
+      .navFix {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}

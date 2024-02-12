@@ -1,0 +1,76 @@
+@use "./var" as *;
+
+.fitertionCon {
+  // ------------- filter Button -------------
+  .Filterproducte {
+    padding: 40px;
+    .FilterproducteChildOne {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 0;
+    }
+    .FilterproducteChildTwo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      button {
+        border: 2px solid $darkBlue;
+        border-radius: 10px;
+        padding: 20px 10px;
+        font-weight: 700;
+        color: $darkBlue;
+        transition: 500ms;
+        flex-grow: 1;
+
+        //   margin: 2px;
+      }
+      button:hover {
+        background-color: $darkBlue;
+        color: $white;
+      }
+    }
+  }
+
+  // ------------- filter card -------------
+
+  .FilterCard {
+    .FilterCardConMap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px 0;
+      .FilterCardChild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img:hover {
+          transition: 1000ms;
+          // border: 1px solid red;
+          transform: scale(1.1);
+        }
+        .cardTilteandPrice {
+          padding: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid rgb(224, 224, 224);
+          // border-bottom: 1px solid grey;
+          .addToCart {
+            // border: 1px solid rebeccapurple;
+            // flex-grow: 1;
+            // padding: 5px 2px;
+            display: flex;
+            // justify-content: flex-start;
+            align-items: center;
+            svg {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
